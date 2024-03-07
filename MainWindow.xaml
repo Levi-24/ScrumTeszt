@@ -1,0 +1,28 @@
+﻿<Window x:Class="Scrum.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scrum"
+        mc:Ignorable="d"
+        Title="ScrumTeszt" Height="580" Width="1100">
+    <Grid>
+        <!--Cim-->
+        <Label Content="Scrum Teszt" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black"/>
+        
+        <!--E-mail es nev-->
+        <Label Content="Neved:" HorizontalAlignment="Left" Margin="40,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail címed:" HorizontalAlignment="Left" Margin="40,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbEmail" HorizontalAlignment="Left" Margin="126,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="126,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        
+        <!--Kerdes 1-->
+        <Label Content="1. Ki a Scrum csapat vezetője?" HorizontalAlignment="Left" Margin="40,118,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxValasz1" Margin="45,149,854,325">
+            <ListBoxItem Content="ProductOwner"/>
+            <ListBoxItem Content="Scrum Master"/>
+            <ListBoxItem Content="Developer Team"/>
+        </ListBox>
+
+    </Grid>
+</Window>
