@@ -60,5 +60,15 @@
         <!--Kuldes Gomb-->
         <Button Content="Kész" HorizontalAlignment="Center" Margin="0,449,0,0" VerticalAlignment="Top" Width="200" Height="75" FontSize="36" FontFamily="Bahnschrift SemiBold"/>
 
+        <!--Feladatok-->
+        <Label Content="Feladat 1:" HorizontalAlignment="Left" Margin="849,70,0,0" VerticalAlignment="Top" Background="#7F45CCDE"/>
+        <Label Content="Feladat 2:" HorizontalAlignment="Left" Margin="849,149,0,0" VerticalAlignment="Top" Background="#7F45CCDE"/>
+        <Label Content="Feladat 3:" HorizontalAlignment="Left" Margin="849,221,0,0" VerticalAlignment="Top" Background="#7F45CCDE"/>
+        <Label Content="Feladat 4:" HorizontalAlignment="Left" Margin="849,368,0,0" VerticalAlignment="Top" Background="#7F45CCDE"/>
+        <Label Content="Feladat 5:" HorizontalAlignment="Left" Margin="849,449,0,0" VerticalAlignment="Top" Background="#7F45CCDE"/>
+        
+        <!--Valaszok-->
+        <ListBox Margin="849,256,16,218"/>
+
     </Grid>
 </Window>
