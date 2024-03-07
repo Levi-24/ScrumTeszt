@@ -6,23 +6,59 @@
         xmlns:local="clr-namespace:Scrum"
         mc:Ignorable="d"
         Title="ScrumTeszt" Height="580" Width="1100">
-    <Grid>
+    <Grid Background="#FFE4E4E4">
         <!--Cim-->
         <Label Content="Scrum Teszt" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black"/>
-        
+
         <!--E-mail es nev-->
         <Label Content="Neved:" HorizontalAlignment="Left" Margin="40,44,0,0" VerticalAlignment="Top"/>
         <Label Content="E-mail címed:" HorizontalAlignment="Left" Margin="40,75,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txbEmail" HorizontalAlignment="Left" Margin="126,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="126,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        
+        <TextBox x:Name="txbEmail" HorizontalAlignment="Left" Margin="126,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="126,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+
         <!--Kerdes 1-->
         <Label Content="1. Ki a Scrum csapat vezetője?" HorizontalAlignment="Left" Margin="40,118,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lbxValasz1" Margin="45,149,854,325">
+        <ListBox Margin="45,149,820,325">
             <ListBoxItem Content="ProductOwner"/>
             <ListBoxItem Content="Scrum Master"/>
             <ListBoxItem Content="Developer Team"/>
         </ListBox>
+
+        <!--Kerdes 2-->
+        <Label Content="2. Milyen módszertan a Scrum módszertan?" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Center"/>
+        <ComboBox HorizontalAlignment="Left" Margin="45,300,0,0" VerticalAlignment="Top" Width="235">
+            <ComboBoxItem Content="Sprint Planning Meeting"/>
+            <ComboBoxItem Content="Daily Conversion"/>
+            <ComboBoxItem Content="Sprint Retrospective"/>
+            <ComboBoxItem Content="Backlog Grooming"/>
+        </ComboBox>
+
+        <!--Kerdes 3-->
+        <Label Content="3. Milyen eseményeket ismersz a Scrumban?" HorizontalAlignment="Left" Margin="40,346,0,0" VerticalAlignment="Top"/>
+        <StackPanel Margin="45,377,820,97">
+            <CheckBox Content="Sprint Planning Meeting"></CheckBox>
+            <CheckBox Content="Daily Conversion"></CheckBox>
+            <CheckBox Content="Sprint Retrospective"></CheckBox>
+            <CheckBox Content="Backlog Grooming"></CheckBox>
+        </StackPanel>
+
+        <!--Ismerteto-->
+        <TextBlock Margin="0,57,0,0" TextWrapping="Wrap" TextAlignment="Justify" Text="Ez a teszt arra szolgál, hogy felmérje a tudásodat a Scrum módszertannal kapcsolatban. amennyiben a teszt eredménye sikeres, veregesd meg a a bal vállad a jobb kezeddel. Amennyiben nem sikeres a teszt, itt az ideje tanulni, mert nemsokára számonkérés következik a fenti módszertan anyagából." Width="380" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <!--Kerdes 4-->
+        <Label Content="4. Milyen dokumentumoket ismersz a Scrumban?" HorizontalAlignment="Left" Margin="430,256,0,0" VerticalAlignment="Top"/>
+        <StackPanel Margin="437,283,408,209">
+            <RadioButton Content="Product Backlog"></RadioButton>
+            <RadioButton Content="Sprint Retrospective"></RadioButton>
+            <RadioButton Content="Daily Scrum"></RadioButton>
+        </StackPanel>
+
+        <!--Kerdes 5-->
+        <Label Content="5. Milyen típusú módszertan a Scrum?" HorizontalAlignment="Left" Margin="430,346,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="437,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
+
+        <!--Kuldes Gomb-->
+        <Button Content="Kész" HorizontalAlignment="Center" Margin="0,449,0,0" VerticalAlignment="Top" Width="200" Height="75" FontSize="36" FontFamily="Bahnschrift SemiBold"/>
 
     </Grid>
 </Window>
